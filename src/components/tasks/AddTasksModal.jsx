@@ -10,7 +10,6 @@ const AddTasksModal = ({ isOpen, setIsOpen }) => {
   };
   const onSubmit = (data) => {
     onCancel();
-    console.log(data);
   };
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
@@ -77,3 +76,4 @@ const AddTasksModal = ({ isOpen, setIsOpen }) => {
 };
 
 export default AddTasksModal;
+//
