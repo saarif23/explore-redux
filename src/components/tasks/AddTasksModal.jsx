@@ -39,12 +39,12 @@ const AddTasksModal = ({ isOpen, setIsOpen }) => {
           <input
             className="w-full rounded-md mt-2"
             type="date"
-            {...register("deadline")}
+            {...register("date")}
           />
         </div>
         <div className="mt-3">
           <label htmlFor="assign to">Assign To</label>
-          <select className="w-full rounded-md mt-2" {...register("assign to")}>
+          <select className="w-full rounded-md mt-2" {...register("assignedTo")}>
             <option value="Arif Hossain">Arif Hossain</option>
             <option value="Mahfuz">Mahfuz</option>
             <option value="Sumon Hossain">Sumon Hossain</option>
@@ -58,7 +58,7 @@ const AddTasksModal = ({ isOpen, setIsOpen }) => {
           <select className="w-full rounded-md mt-2" {...register("piority")}>
             <option value="high">High</option>
             <option value="medium">Medium</option>
-            <option value="low">LOw</option>
+            <option value="low">Low</option>
           </select>
         </div>
 
